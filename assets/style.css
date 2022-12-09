@@ -1,0 +1,105 @@
+:root {
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --cyan: hsl(178, 100%, 50%);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: var(--main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--card-bg);
+  min-height: 610px;
+  max-width: 90%;
+
+  width: 400px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 30px;
+}
+
+.image-side {
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+}
+
+.text-side .text-body h1 {
+  color: white;
+  margin: 10px 0 14px;
+}
+
+.text-side .text-body p {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.before-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  position: relative;
+}
+.before-footer::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 100%;
+  background-color: hsl(215, 51%, 70%);
+  border-radius: 22px;
+}
+.left-side p {
+  font-weight: bold;
+  color: var(--cyan) !important;
+}
+.left-side img {
+  margin-right: 10px;
+}
+.right-side {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+}
+.right-side img {
+  margin-right: 10px;
+}
+.text-footer {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+}
+.text-footer img {
+  height: 42px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.text-footer p {
+  color: hsl(215, 51%, 70%);
+}
